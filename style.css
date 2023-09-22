@@ -1,0 +1,141 @@
+:root{
+    --header-bg-clr : black;
+    --header-clr: white;
+    --font-size: 1.2rem;
+    --header-height: 20vh;
+    --footer-height: 10vh;
+    
+    
+}
+
+
+*,  *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url("./images/bgimage.jpg") no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+#content{
+    height: 100vh;
+}
+
+.header{
+    background: var(--header-bg-clr);
+    color: var(--header-clr);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    /*height: var(--header-height);*/
+}
+
+.navSection{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-evenly;
+    font-size: var(--font-size);
+}
+
+
+.button-nav{
+    background: black;
+    border: none;
+    padding :8px;
+    color: white;
+    font-size: var(--font-size);
+}
+
+.active{
+    border-bottom: 2px solid white;
+    
+}
+
+
+
+
+.footer{
+    /*height: var(--footer-height);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--header-bg-clr);
+    color: var(--header-clr);
+    font-size: var(--font-size);
+}
+
+.main{
+    width: 70vw;
+    margin: 3rem auto 0 auto;
+    padding: 4rem;
+    /*height: calc(100vh - calc(var(--header-height) + var(--footer-height)));*/
+    background: rgba(0, 0, 0, 0.8);
+    
+}
+
+.home{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: var(--font-size);
+}
+
+img{
+    border-radius: 50%;
+}
+
+.contact{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; 
+}
+
+.contact h3{
+    align-self: center;
+}
+
+.contactDetails{
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    box-shadow: 0px 1px 10px inset white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    width: 40vw;
+    font-size: 1.1rem;
+}
+
+.menu{
+    color: white;
+    text-align: center;
+}
+
+.menuItemsDiv{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    gap: 10px;
+}
+
+.menuItem{
+    padding: 1rem;
+    border: 1px solid white;
+}
