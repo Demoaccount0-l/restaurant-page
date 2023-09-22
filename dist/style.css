@@ -142,6 +142,7 @@ img{
     gap: 1rem;
     border-radius: 10px;
     align-items: center;
+    background: rgba(86,86,86,0.6);
 }
 
 .menuItem img{
