@@ -13,7 +13,7 @@ function createMenu(){
 
 }
 
-/*
+
 function loadMenuItems(){
     const menuItems = [
         {
@@ -67,7 +67,7 @@ function loadMenuItems(){
     return menuItemsDiv;
 }
 
-*/
+
 
 
 function loadMenu(){
